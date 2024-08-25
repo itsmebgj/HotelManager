@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/hotel-management/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.47-bin" level="project" />
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="e86f7cfb-1a73-40a6-ab2e-e22f77fa3266" />
+  </component>
+</module>

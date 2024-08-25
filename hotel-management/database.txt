@@ -1,0 +1,66 @@
+DROP database if exists hotel;
+CREATE DATABASE hotel;
+Use hotel;
+
+CREATE TABLE `USER` (
+                        `USER_NO` bigint auto_increment primary key,
+                        `USERNAME` varchar(20) NOT NULL,
+                        `PASSWORD` varchar(20) NOT NULL
+);
+INSERT INTO `USER` (`username`, `password`) VALUES
+    ('admin', '1234');
+
+CREATE TABLE `ROOM` (
+                        `ROOM_NO` int NOT NULL PRIMARY KEY,
+                        `ROOM_TYPE` varchar(20) NOT NULL,
+                        `BED_TYPE` varchar(20) NOT NULL,
+                        `PRICE` int NOT NULL,
+                        `STATUS` tinyint default 0 not null
+    -- 0 : 예약 없음, 1 : 예약됨, 2 : 체크인 상태
+);
+
+INSERT INTO `ROOM`(`ROOM_NO`, `ROOM_TYPE`, `BED_TYPE`, `PRICE`, `STATUS`) VALUES
+                                                                              (1,'SUITE','QUEEN',9500,0),
+                                                                              (2,'DELUXE','KING',7500, 0),
+                                                                              (3,'AC','KING',8000, 0),
+                                                                              (4,'NON-AC','DOUBLE',3500, 0),
+                                                                              (5,'SUITE','SINGLE',5500, 0),
+                                                                              (6,'DELUXE','DOUBLE',7000, 0),
+                                                                              (7,'AC','QUEEN',6500, 0),
+                                                                              (8,'NON-AC','SINGLE',5500, 0),
+                                                                              (9,'SUITE','QUEEN',9500, 0),
+                                                                              (10,'DELUXE','KING',7500, 0),
+                                                                              (11,'AC','KING',8000, 0),
+                                                                              (12,'NON-AC','DOUBLE',3500, 0),
+                                                                              (13,'SUITE','SINGLE',5500, 0),
+                                                                              (14,'DELUXE','DOUBLE',7000, 0),
+                                                                              (15,'AC','QUEEN',6500, 0),
+                                                                              (16,'NON-AC','SINGLE',5500, 0),
+                                                                              (17,'SUITE','QUEEN',9500, 0),
+                                                                              (18,'DELUXE','KING',7500, 0),
+                                                                              (19,'AC','KING',8000, 0),
+                                                                              (20,'NON-AC','DOUBLE',3500, 0)
+;
+
+CREATE TABLE `RESERVE` (
+                           `RESERVE_NO` bigint auto_increment primary key,
+                           `CUSTOMER_NAME` varchar(20) NOT NULL,
+                           `PHONE` varchar(20) NOT NULL,
+                           `ROOM_NO` int NOT NULL,
+                           `GUEST_NUM` int not null,
+                           foreign key (`ROOM_NO`) references `ROOM`(`ROOM_NO`)
+);
+
+CREATE TABLE `HISTORY`
+(
+    `HISTORY_NO`    bigint auto_increment primary key,
+    `ROOM_NO`       int         not null,
+    `CUSTOMER_NAME` VARCHAR(20) NOT NULL,
+    `PHONE`         VARCHAR(20) NOT NULL,
+    `START_DATE`    date        not null,
+    `END_DATE`      date        not null,
+    foreign key (`ROOM_NO`) references `ROOM` (`ROOM_NO`)
+)
+
+--    `RESERVE_NO` bigint not null,
+--    foreign key (`RESERVE_NO`) references `RESERVE`(`RESERVE_NO`)
