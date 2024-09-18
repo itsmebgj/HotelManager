@@ -91,10 +91,13 @@ Vacant(공실), Checked In(체크인 된), Reserved(예약 된)
 ### Activity Diagram
 1.	로그인/사용자등록
 ![image](https://github.com/user-attachments/assets/01a53f88-cbcb-4185-9277-6f23ae4b104c)
+<br></br>
 2.	방상태조회/체크인/체크아웃
 ![image](https://github.com/user-attachments/assets/3bb2e77b-ce13-43a3-8490-77665b4b2fbb)
+<br></br>
 3.	객실예약관리(객실 예약, 예약 취소, 예약 변경)
 ![image](https://github.com/user-attachments/assets/b39d2241-5236-417a-b567-f6851e392b87)
+<br></br>
 4.	객실종류관리(객실 종류 추가, 삭제, 변경)
 ![image](https://github.com/user-attachments/assets/204f7b73-fc35-4a10-8858-ada4e108ef86)
 <br></br>
