@@ -1,18 +1,30 @@
-# Hotel-Management-System-Java
-### Implementation
-  The project is implemented using Swing GUI widget toolkit and MYSQL database. There are totally 9 classes. The root class i.e Hotel exhibits singleton design pattern whereas RoomCustomer and RestuarantCustomer incorporate the properties of factory design pattern. 
-</br></br>
-### About the project
-  A customer can select either of the services provided by the hotel i.e., Accommodation or Food. Based on the customer’s choice he/she will be redirected to the next page where he/she can select desired food items or book rooms. 
-Admin can add/delete dishes or rooms to the database.
-</br></br>
+# 호텔 객실관리 프로그램
+### 프로젝트 설명
+  호텔에서 사용하는 프로그램으로 사용자는 고객이 아닌 관리자로 지정 하였으며, 관리자 회원가입, 로그인, 예약, 체크인, 체크아웃기능 등 호텔의 전반적인 시스템을 조율하는 프로그램입니다.
+이 주제를 선정 한 이유는 객체지향 프로그래밍 언어인 자바 언어를 기반으로 객체지향의 특성이 잘 나타날 수 있으며, 외부시스템의 비중이 작다고 생각했습니다. 또한 클래스의 개수가 10개 내외인 주제를 브레인스토밍 했으며, 팀원 간의 투표를 통해 호텔 객실관리 프로그램으로 선정하게 되었습니다.
+
+### 참고 소스코드 및 수정,추가 사항
+https://github.com/ShefaliDigikar/Hotel-Management-System-Java
+체크인, 체크아웃 상태를 구분이 없어서 상태를 구분하도록 데이터베이스를 생성하였고 기존의 기능에서 수정 및 추가 한 사항은 다음과 같습니다.
+1.	체크인 기능(수정)
+기존의 소스코드에서는 영수증 발행 기능을 진행하면 체크인이 되었다고 가정하도록 설계되어 있었습니다. 체크인 버튼을 생성하여 체크인 기능 실행 시에 보조 기능으로 영수증이 발행되도록 수정하였습니다.
+
+2.	예약 기능 (추가)
+객실 예약 기능이 없어서 해당 객실을 예약하는 기능을 추가하였습니다.
+
+3.	방 상태에 따른 정보 표시 (추가)
+해당 객실의 공실/체크인/예약 상태에 따른 정보를 표시하는 기능을 추가하였습니다. 공실일 경우에는 공실이라는 메시지를 표시하고, 체크인/예약인 경우에는 해당 고객의 이름과 전화번호, 그리고 체크인 상태인지 예약상태인지 메시지를 표시합니다.
+
+
+### LRC
+![image](https://github.com/user-attachments/assets/f76b0dba-ae52-4c1d-9955-011b831320ae)
+![image](https://github.com/user-attachments/assets/54212608-c5f7-40d5-bb93-8d93aa59fa50)
+
+
 ### Class Diagram
-![JAVA_OEEE](https://user-images.githubusercontent.com/45465068/84239177-bbb5b000-ab19-11ea-9d9b-558c8ec7194f.png)
-</br>
-### Steps to run the application
-  1. Open xampp server and create a database named ‘renaissance’.
-  2. Create required tables and populate the database using database.txt.
-  3. Import the project in Eclipse IDE.
-  4. Right-click on the project -> Build path -> Configure Build path. Under Libraries tab, click Add External JARs  and import all the          JARs present in the External_JARs folder.
-  5. Run the project. 
+![image](https://github.com/user-attachments/assets/6907e0dc-a54a-48b2-9275-24b999325ab8)
+
+### Usecase Diagram
+![image](https://github.com/user-attachments/assets/7593908d-c002-4679-a593-e33132c1c832)
+
 
