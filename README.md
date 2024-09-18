@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/bee46af8-56fb-4d21-8643-27e48621f8b3)![image](https://github.com/user-attachments/assets/9234714b-4f6d-41cb-90b9-3012dab0a6c2)![image](https://github.com/user-attachments/assets/b737b875-be3d-4434-ae91-7ed718760dec)![image](https://github.com/user-attachments/assets/d2e5edd5-cd53-43f8-a800-7d7c75c3ce64)# 호텔 객실관리 프로그램
+# 호텔 객실관리 프로그램
 ### 프로젝트 설명
   호텔에서 사용하는 프로그램으로 사용자는 고객이 아닌 관리자로 지정 하였으며, 관리자 회원가입, 로그인, 예약, 체크인, 체크아웃기능 등 호텔의 전반적인 시스템을 조율하는 프로그램입니다.
 이 주제를 선정 한 이유는 객체지향 프로그래밍 언어인 자바 언어를 기반으로 객체지향의 특성이 잘 나타날 수 있으며, 외부시스템의 비중이 작다고 생각했습니다. 또한 클래스의 개수가 10개 내외인 주제를 브레인스토밍 했으며, 팀원 간의 투표를 통해 호텔 객실관리 프로그램으로 선정하게 되었습니다.
